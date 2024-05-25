@@ -1,9 +1,12 @@
+import Home from "./pages/Home";
+// 1. import `NextUIProvider` component
+import {NextUIProvider} from "@nextui-org/react";
 function App() {
   return (
     <>
-        <h1 className="text-3xl font-bold underline">
-            Hello world!
-        </h1>
+        <NextUIProvider>
+            <Home/>
+        </NextUIProvider>
     </>
   )
 }
